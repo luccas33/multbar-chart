@@ -1,0 +1,68 @@
+.multbar-container {
+    width: 70%;
+}
+
+.multbar {
+    display: flex;
+}
+
+.multbar ~ .multbar {
+    margin-top: 3px;
+}
+
+.multbar-label {
+    background-color: #6f6f6f;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.multbar-bar {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.multbar-labels {
+    padding-left: 3px;
+}
+
+.multbar-subbar-bar {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.multbar-labels {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.multbar-subbar {display: flex;}
+
+.multbar-subbar-labels {
+    position: relative;
+    top: 0;
+    left: calc(100% + 5px);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.multbar-subbar-labels > div {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #6f6f6f;
+    opacity: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+}
+
+.multbar-subbar-bar:hover div { opacity: 1; }
+
+.multbar-subbar-bar label { color: white; }
